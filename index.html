@@ -11,8 +11,8 @@
         <h1>Encriptador de Texto</h1>
         <div class="text-container">
             <div class="text-area">
-                <textarea id="input-text" placeholder="Ingrese el texto aquí..."></textarea>
-                <p>Solo letras minúsculas y sin acentos</p>
+                <textarea id="input-text" placeholder="Ingrese el texto aquí..." oninput="validarTexto()"></textarea>
+                <p>Solo letras minusculas sin acentos ni caracteres especiales</p>
             </div>
             <div class="text-area">
                 <textarea id="output-text" placeholder="NINGÚN MENSAJE FUE ENCONTRADO..." readonly></textarea>
@@ -34,5 +34,3 @@
     </footer>
 </body>
 </html>
-
-

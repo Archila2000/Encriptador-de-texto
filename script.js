@@ -1,3 +1,13 @@
+function validarTexto() {
+    const inputText = document.getElementById("input-text");
+    const regex = /^[a-z\s]*$/; // Solo letras minúsculas y espacios
+
+    if (!regex.test(inputText.value)) {
+        alert("No es posible ingresar mayúsculas o caracteres especiales.");
+        inputText.value = inputText.value.slice(0, -1); // Elimina el último carácter inválido
+    }
+}
+
 function encriptar() {
     let texto = document.getElementById("input-text").value;
     let textoEncriptado = texto
