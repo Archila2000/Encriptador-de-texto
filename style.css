@@ -72,7 +72,7 @@ textarea {
 }
 
 p {
-    background: linear-gradient(to right, #ff9900 0%, #6cd9fa 100%);
+    background-color: var(--blue-color);
     border-radius: 5px;
     color: var(--dark-color);
     font-family: var(--font-1);
